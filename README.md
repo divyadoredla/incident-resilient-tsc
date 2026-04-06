@@ -171,7 +171,7 @@ DisruptionWrapper(
 3. EPISODE ENDS
    After 50 steps or when all vehicles clear
 ```
-[4-Way Traffic Intersection ](image-1.png)
+![4-Way Traffic Intersection ](image-1.png)
 ---
 
 ![RL Agent Behavior Graph](image-3.png)
