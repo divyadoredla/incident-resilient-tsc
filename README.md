@@ -21,7 +21,7 @@
 Select an agent, force a specific disruption type, adjust disruption frequency,  
 and watch the robust agent recover in real time while the standard agent collapses.
 
-![Gradio Dashboard](gradio_dashboard.png)
+[Gradio Dashboard](gradio_dashboard.png)
 
 ---
 
@@ -64,7 +64,7 @@ Standard trained agents **collapse** under these conditions. Waiting times spike
 └─────────────────────────────────────────────────────────┘
 
 
-![alt text](image.png)
+(image.png)
 ```
 
 ---
@@ -171,7 +171,7 @@ DisruptionWrapper(
 [4-Way Traffic Intersection ](image-1.png)
 ---
 
-![RL Agent Behavior Graph](image-3.png)
+[RL Agent Behaviour Graph](image-3.png)
 
 ## Training
 
@@ -202,7 +202,7 @@ robust.learn(total_timesteps=50_000)
 
 ---
 
-![Demo / Dashboard](image-4.png)
+[Demo / Dashboard](image-4.png)
 
 ## Results
 
