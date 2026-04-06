@@ -22,9 +22,9 @@ Select an agent, force a specific disruption type, adjust disruption frequency,
 and watch the robust agent recover in real time while the standard agent collapses.
 
 
-
----
 ![Gradio Dashboard](gradio_dashboard.png)
+---
+
 
 ## The Problem This Solves
 
