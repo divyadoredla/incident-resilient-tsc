@@ -38,7 +38,7 @@ What none of them solve — and what 2024–25 survey literature explicitly flag
 Standard trained agents **collapse** under these conditions. Waiting times spike and never recover. This project builds an environment specifically designed to expose that failure and train against it.
 
 
-![Disruption Comparison](image-2.png)
+[Disruption Comparison](image-2.png)
 ---
 
 ## Architecture
