@@ -64,7 +64,7 @@ Standard trained agents **collapse** under these conditions. Waiting times spike
 └─────────────────────────────────────────────────────────┘
 
 
-(image.png)
+![Traffic Intersection](image.png)
 ```
 
 ---
