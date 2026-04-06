@@ -37,6 +37,8 @@ What none of them solve — and what 2024–25 survey literature explicitly flag
 
 Standard trained agents **collapse** under these conditions. Waiting times spike and never recover. This project builds an environment specifically designed to expose that failure and train against it.
 
+
+![Disruption Comparison](image-2.png)
 ---
 
 ## Architecture
@@ -60,9 +62,25 @@ Standard trained agents **collapse** under these conditions. Waiting times spike
 │                                 │  • Sensor drop   │   │
 │                                 └──────────────────┘   │
 └─────────────────────────────────────────────────────────┘
+
+
+![alt text](image.png)
 ```
 
 ---
+## 🚀 Key Highlights
+
+- ✅ First RL traffic environment with **mid-episode disruption injection**
+- ✅ Custom Gymnasium wrapper for real-world robustness simulation
+- ✅ PPO agent trained under stochastic disruptions
+- ✅ 17.8% performance improvement under disruptions
+- ✅ Live interactive Gradio demo
+- ✅ Fully deployable via FastAPI + Docker
+
+
+
+
+
 
 ## Environment Design
 
@@ -124,6 +142,7 @@ DisruptionWrapper(
 )
 ```
 
+
 ---
 
 ## How It Works — Step by Step
@@ -149,8 +168,10 @@ DisruptionWrapper(
 3. EPISODE ENDS
    After 50 steps or when all vehicles clear
 ```
-
+[4-Way Traffic Intersection ](image-1.png)
 ---
+
+![RL Agent Behavior Graph](image-3.png)
 
 ## Training
 
@@ -180,6 +201,8 @@ robust.learn(total_timesteps=50_000)
 | Gamma | 0.99 (default) |
 
 ---
+
+![Demo / Dashboard](image-4.png)
 
 ## Results
 
@@ -274,6 +297,13 @@ incident-resilient-tsc/
 
 ---
 
+## 👉 Key Insight:
+Robust agent sacrifices ~27% performance in clean traffic
+but gains ~18% improvement under disruptions — making it
+far more suitable for real-world deployment.
+
+
+
 ## Hackathon Module Mapping
 
 This project directly addresses all 4 evaluated modules:
@@ -305,6 +335,14 @@ This project addresses a gap explicitly identified in recent literature:
 The `DisruptionWrapper` is a direct engineering response to this documented gap.
 
 ---
+
+## Limitations
+
+- Simplified 4-lane intersection (not full road network)
+- No multi-agent coordination
+- Disruptions are stochastic, not learned/adversarial
+- No real-world dataset validation
+
 
 ## Quick Start
 
@@ -351,5 +389,22 @@ python gradio_app.py
 | Language | Python 3.10+ |
 
 ---
+
+## Reproducibility
+
+- Random seed: 42
+- Evaluation episodes: 10
+- Hardware: T4 GPU (Colab)
+- Training time: ~15 minutes
+
+## Future Work
+
+- Multi-intersection coordination (MARL)
+- Integration with SUMO or CityFlow
+- Real-world traffic dataset validation
+- Adversarial disruption modeling
+- Transformer-based policies
+
+
 
 *Built for the RL Environment Design Hackathon — April 2026*
