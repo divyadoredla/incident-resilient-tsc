@@ -21,9 +21,10 @@
 Select an agent, force a specific disruption type, adjust disruption frequency,  
 and watch the robust agent recover in real time while the standard agent collapses.
 
-[Gradio Dashboard](gradio_dashboard.png)
+
 
 ---
+![Gradio Dashboard](gradio_dashboard.png)
 
 ## The Problem This Solves
 
@@ -38,8 +39,9 @@ What none of them solve — and what 2024–25 survey literature explicitly flag
 Standard trained agents **collapse** under these conditions. Waiting times spike and never recover. This project builds an environment specifically designed to expose that failure and train against it.
 
 
-[Disruption Comparison](image-2.png)
+
 ---
+![Disruption Comparison](image-2.png)
 
 ## Architecture
 
@@ -64,9 +66,10 @@ Standard trained agents **collapse** under these conditions. Waiting times spike
 └─────────────────────────────────────────────────────────┘
 
 
-![Traffic Intersection](image.png)
+
 ```
 
+![Traffic Intersection](image.png)
 ---
 ## 🚀 Key Highlights
 
@@ -171,7 +174,7 @@ DisruptionWrapper(
 [4-Way Traffic Intersection ](image-1.png)
 ---
 
-[RL Agent Behaviour Graph](image-3.png)
+![RL Agent Behavior Graph](image-3.png)
 
 ## Training
 
@@ -202,7 +205,7 @@ robust.learn(total_timesteps=50_000)
 
 ---
 
-[Demo / Dashboard](image-4.png)
+![Demo / Dashboard](image-4.png)
 
 ## Results
 
