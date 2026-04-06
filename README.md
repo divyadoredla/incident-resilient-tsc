@@ -220,7 +220,7 @@ The robust agent pays a small cost on clean traffic (−22.71 vs −17.85) in ex
 
 ### Demo chart
 
-![Demo Chart](demo_chart.png)
+![Demo Chart](demo_chart.webp)
 
 Green line = robust agent. Orange dashed = standard agent. Amber shading = disruption active.
 
